@@ -1,0 +1,44 @@
+{
+  "name": "nunjucks-volt",
+  "description": "nunjucks optimized for php volt template",
+  "version": "0.1.0",
+  "author": "bodyno <az8321550@gmail.com>",
+  "dependencies": {
+    "asap": "^2.0.3",
+    "chokidar": "^1.0.0",
+    "yargs": "^3.32.0"
+  },
+  "browser": "./browser/nunjucks.js",
+  "devDependencies": {
+    "expect.js": "*",
+    "express": "4.x",
+    "istanbul": "0.3.x",
+    "jshint": "2.8.x",
+    "mocha": "*",
+    "node-libs-browser": "^0.4.3",
+    "supertest": "*",
+    "uglify-js": "*",
+    "webpack": "^1.8.11"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "lint": "jshint .",
+    "test": "jshint . && istanbul cover ./node_modules/mocha/bin/_mocha -- -b -R tap tests",
+    "browserfiles": "./bin/bundle"
+  },
+  "bin": {
+    "nunjucks-precompile": "./bin/precompile"
+  },
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bodyno/nunjucks-volt.git"
+  },
+  "keywords": [
+    "template",
+    "templating"
+  ],
+  "license": "MIT"
+}
